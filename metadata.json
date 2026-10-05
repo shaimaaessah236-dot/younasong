@@ -1,0 +1,6 @@
+{
+  "name": "YONA SONGS",
+  "description": "A dark, cozy No-Music / Vocals Only Knowledge & Audio Directory, World Cinema & Series Multi-Server Player, Moises-style AI Vocal & Stem Isolator, and Verified Telegram Channels Hub.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

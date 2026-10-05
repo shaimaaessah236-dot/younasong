@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Homepage & Audio Library -->
+  <url>
+    <loc>https://yonasongs.com/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yonasongs.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yonasongs.com/en" />
+    <image:image>
+      <image:loc>https://yonasongs.com/og-image.jpg</image:loc>
+      <image:title>YONA SONGS - أكبر مكتبة عربية شارات سبيستون وأغاني بدون موسيقى</image:title>
+      <image:caption>منصة استماع وتسجيل أكابيلا نقية 100% بصوت بشري دافئ</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Spacetoon Themes Directory -->
+  <url>
+    <loc>https://yonasongs.com/?cat=spacetoon</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yonasongs.com/?cat=spacetoon" />
+  </url>
+
+  <!-- Anime Themes Category -->
+  <url>
+    <loc>https://yonasongs.com/?cat=anime</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yonasongs.com/?cat=anime" />
+  </url>
+
+  <!-- Vocal Studio & Karaoke -->
+  <url>
+    <loc>https://yonasongs.com/#vocal-studio</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Spacetoon Quiz Challenge ( احزر الشارة ) -->
+  <url>
+    <loc>https://yonasongs.com/#quiz</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Grand Vocal Contest (المسابقة الكبرى للأصوات) -->
+  <url>
+    <loc>https://yonasongs.com/#contest</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Spacetoon Retro CRT TV Hub -->
+  <url>
+    <loc>https://yonasongs.com/#spacetoon-tv</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Spacetoon Passport Hub -->
+  <url>
+    <loc>https://yonasongs.com/#passport</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Fan Requests and Dedications -->
+  <url>
+    <loc>https://yonasongs.com/#dedications</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Official Spacetoon Lyrics Book Store -->
+  <url>
+    <loc>https://yonasongs.com/#store</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

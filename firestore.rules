@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Default deny for unlisted documents
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // User Profiles & Passports
+    match /users/{userId} {
+      allow read: if true;
+      allow create, update: if isOwner(userId);
+      allow delete: if isOwner(userId);
+    }
+
+    // Contest Entries
+    match /contestEntries/{entryId} {
+      allow read: if true;
+      allow create: if isSignedIn();
+      allow update, delete: if isSignedIn() && (resource == null || resource.data.userId == request.auth.uid);
+    }
+
+    // Dedications & Requests
+    match /dedications/{dedicationId} {
+      allow read: if true;
+      allow create: if isSignedIn();
+      allow update, delete: if isSignedIn() && (resource == null || resource.data.userId == request.auth.uid);
+    }
+
+    // Community Polls & Votes
+    match /communityVotes/{voteId} {
+      allow read: if true;
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+  }
+}

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Suppress Vite websocket and dev connection notices in iframe environment
+      (function() {
+        var origError = console.error;
+        var origWarn = console.warn;
+        var origLog = console.log;
+        var origInfo = console.info;
+        var origDebug = console.debug;
+        var isViteNotice = function(args) {
+          if (!args) return false;
+          for (var i = 0; i < args.length; i++) {
+            var item = args[i];
+            var str = String((item && (item.message || item.stack)) ? (item.message + ' ' + (item.stack || '')) : item);
+            if (
+              str.indexOf('[vite]') !== -1 ||
+              str.indexOf('vite:') !== -1 ||
+              str.indexOf('WebSocket connection to') !== -1 ||
+              str.indexOf('failed to connect to websocket') !== -1 ||
+              str.indexOf('vite-hmr') !== -1
+            ) {
+              return true;
+            }
+          }
+          return false;
+        };
+        console.error = function() {
+          if (!isViteNotice(arguments)) origError.apply(console, arguments);
+        };
+        console.warn = function() {
+          if (!isViteNotice(arguments)) origWarn.apply(console, arguments);
+        };
+        console.log = function() {
+          if (!isViteNotice(arguments)) origLog.apply(console, arguments);
+        };
+        console.info = function() {
+          if (!isViteNotice(arguments)) origInfo.apply(console, arguments);
+        };
+        console.debug = function() {
+          if (!isViteNotice(arguments)) origDebug.apply(console, arguments);
+        };
+        if (typeof window !== 'undefined') {
+          window.addEventListener('unhandledrejection', function(event) {
+            if (event.reason && isViteNotice([event.reason])) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+            }
+          }, true);
+          window.addEventListener('error', function(event) {
+            if (event.message && isViteNotice([event.message, event.error])) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+            }
+          }, true);
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://www.gstatic.com https://*.firebaseapp.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: http:; media-src 'self' data: blob: https: http:; connect-src 'self' https: wss: ws: https://*.googleapis.com https://*.firebaseio.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://*.firebaseapp.com; object-src 'none'; base-uri 'self';" />
+    <meta name="theme-color" content="#0a0d14" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YONA SONGS" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <title>YONA SONGS | شارات سبيستون وأغاني بدون موسيقى (Vocals Only)</title>
+    <meta name="description" content="أكبر منصة عربية لأغاني وشارات سبيستون والأنمي بدون موسيقى (Vocals Only Acapella). استمتع باستوديو الغناء، كويز الشارات، ومسابقات الأصوات الحصرية بأعلى جودة." />
+    <meta name="keywords" content="شارات سبيستون بدون موسيقى, أغاني بدون موسيقى, فوكالز عربي, استوديو غناء بدون موسيقى, كويز شارات سبيستون, مسابقة الاصوات الكبرى, اغاني انمي بدون موسيقى, عزل الصوت, كاريوكي بدون موسيقى, Yona Songs, Vocals Only, No Music Arabic Songs, Spacetoon Acapella, Anime Themes" />
+    <meta name="author" content="Yona Songs Team" />
+    
+    <!-- Canonical & Alternate Hreflang URLs -->
+    <link rel="canonical" href="https://yonasongs.com/" />
+    <link rel="alternate" hreflang="ar" href="https://yonasongs.com/" />
+    <link rel="alternate" hreflang="en" href="https://yonasongs.com/en" />
+    <link rel="alternate" hreflang="x-default" href="https://yonasongs.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yonasongs.com/" />
+    <meta property="og:title" content="YONA SONGS | أكبر منصة عربية لشارات سبيستون وأغاني بدون موسيقى" />
+    <meta property="og:description" content="استمع لأروع شارات سبيستون والأنمي بأصوات بشرية نقية 100% بدون أي آلات موسيقية (Vocals Only). استوديو غناء، كويز الشارات، ومسابقات الأصوات." />
+    <meta property="og:image" content="https://yonasongs.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="YONA SONGS - Vocals Only Platform" />
+    <meta property="og:site_name" content="YONA SONGS" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yona_songs" />
+    <meta name="twitter:creator" content="@yona_songs" />
+    <meta name="twitter:title" content="YONA SONGS | شارات سبيستون وأغاني بدون موسيقى" />
+    <meta name="twitter:description" content="أكبر منصة عربية لأغاني وشارات سبيستون بدون موسيقى (Vocals Only). استوديو كاريوكي، كويز، ومسابقات الأصوات." />
+    <meta name="twitter:image" content="https://yonasongs.com/og-image.jpg" />
+
+    <!-- Search Engine Indexing & Bot Directives -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+    <!-- Google Fonts: Cairo, Tajawal, Inter, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Comprehensive Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://yonasongs.com/#website",
+          "url": "https://yonasongs.com/",
+          "name": "YONA SONGS",
+          "alternateName": ["يونا سونغز", "Yona Songs", "أصوات الأغاني بدون موسيقى"],
+          "description": "أكبر منصة عربية متخصصة في شارات سبيستون، الأغاني والأنمي بدون موسيقى (Vocals Only)",
+          "inLanguage": ["ar", "en"],
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://yonasongs.com/?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://yonasongs.com/#webapp",
+          "name": "YONA SONGS",
+          "url": "https://yonasongs.com/",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "شارات سبيستون بدون موسيقى",
+            "استوديو تسجيل وغناء كاريوكي",
+            "كويز احزر الشارة مع شهادات فورية",
+            "المسابقة الكبرى للأصوات وتصويت الجمهور",
+            "عزل الصوت الذكي"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://yonasongs.com/#organization",
+          "name": "YONA SONGS",
+          "url": "https://yonasongs.com/",
+          "logo": "https://yonasongs.com/logo.jpg",
+          "sameAs": [
+            "https://www.youtube.com/@yona_songs",
+            "https://www.instagram.com/yona_songs",
+            "https://www.tiktok.com/@yona_songs",
+            "https://t.me/yona_songs"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://yonasongs.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ما هي منصة YONA SONGS؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "منصة YONA SONGS هي المنصة العربية الرائدة في تقديم شارات كرتون سبيستون والأنمي والأغاني العالمية بصوت بشري نقي 100% بدون أي آلات موسيقية (Vocals Only)، وتوفر استوديو غناء تفاعلي وكويز الشارات ومسابقات الأصوات."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "هل جميع التسجيلات في منصة YONA SONGS بدون موسيقى؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "نعم، جميع الأعمال والتسجيلات بدون أي آلات موسيقية وتعتمد حصرياً على الأصوات البشرية والأكابيلا النقية."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "كيف أحصل على شهادة اجتياز كويز شارات سبيستون؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "يمكنك بدء تحدي كويز احزر الشارة مباشرة من المنصة والإجابة على أسئلة الشارات الكلاسيكية، وعند النجاح ستحصل فوراً على شهادة اجتياز موثقة برقم تسلسلي خاص قابلة للمشاركة والتحميل."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#0F0F12] text-white font-cairo antialiased selection:bg-[#F59E0B] selection:text-black min-h-screen flex flex-col">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

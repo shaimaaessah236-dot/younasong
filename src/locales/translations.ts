@@ -1,0 +1,476 @@
+export interface Translations {
+  [key: string]: {
+    ar: string;
+    en: string;
+  };
+}
+
+export const translations: Translations = {
+  // Brand & Header
+  brandTitle: { ar: 'YONA SONGS', en: 'YONA SONGS' },
+  brandSubtitle: { ar: 'أغاني وشارات بدون موسيقى', en: 'Acapella & Vocal-Only Soundtracks' },
+  brandBadge: { ar: 'أكابيلا خالص', en: 'Vocals Only' },
+  searchPlaceholder: { ar: 'ابحث عن شارة، أنمي، مغني أو كلمات...', en: 'Search soundtrack, anime, vocalist or lyrics...' },
+  cancel: { ar: 'إلغاء', en: 'Cancel' },
+  close: { ar: 'إغلاق', en: 'Close' },
+  save: { ar: 'حفظ', en: 'Save' },
+  edit: { ar: 'تعديل', en: 'Edit' },
+  delete: { ar: 'حذف', en: 'Delete' },
+  share: { ar: 'مشاركة', en: 'Share' },
+  download: { ar: 'تحميل', en: 'Download' },
+  print: { ar: 'طباعة', en: 'Print' },
+  verify: { ar: 'تحقق', en: 'Verify' },
+  success: { ar: 'تم بنجاح', en: 'Success' },
+  error: { ar: 'حدث خطأ', en: 'Error' },
+
+  // Navigation Tabs
+  navLibrary: { ar: 'المكتبة', en: 'Directory' },
+  navStudio: { ar: 'استوديو الغناء', en: 'Vocal Studio' },
+  navContest: { ar: 'المسابقة الكبرى', en: 'Grand Contest' },
+  navQuiz: { ar: 'كويز الشارات', en: 'Theme Quiz' },
+  navPassport: { ar: 'جواز سبيستون', en: 'Passport' },
+  navTv: { ar: 'تلفزيون سبيستون', en: 'Retro TV' },
+  navTelegram: { ar: 'سينما تليجرام', en: 'Telegram Cinema' },
+  navAiAssistant: { ar: 'المساعد الذكي', en: 'AI Assistant' },
+  navTools: { ar: 'أدوات الصوت', en: 'Audio Tools' },
+  navArtists: { ar: 'المغنون', en: 'Vocalists' },
+  navAnime: { ar: 'الأنمي', en: 'Anime' },
+  navCommunity: { ar: 'تصويت الجمهور', en: 'Voting' },
+  navDedications: { ar: 'الإهداءات', en: 'Dedications' },
+  navStore: { ar: 'لشراء منتوجاتنا', en: 'Store' },
+  navFavorites: { ar: 'المفضلة', en: 'Favorites' },
+  navAdmin: { ar: 'لوحة التحكم', en: 'Admin' },
+
+  // Language Switcher & Themes
+  language: { ar: 'اللغة', en: 'Language' },
+  arabic: { ar: 'العربية', en: 'Arabic' },
+  english: { ar: 'الإنجليزية', en: 'English' },
+  themeLight: { ar: 'الوضع الفاتح', en: 'Light Mode' },
+  themeDark: { ar: 'الوضع الداكن', en: 'Dark Mode' },
+
+  // Hero Banner Headline & Subtitle
+  heroTagline: {
+    ar: 'أغاني متنوعة ومختلفة • استوديو الغناء • وخدمات أخرى',
+    en: 'Diverse Acapella Soundtracks • Vocal Studio • Elite Audio Services'
+  },
+  heroTitleMain: {
+    ar: 'أصوات الأغاني الذهبية..',
+    en: 'Timeless Golden Vocals..'
+  },
+  heroTitleGradient: {
+    ar: 'أنتم من يصنع سحرها الآن',
+    en: 'You Bring Their Magic to Life'
+  },
+  heroDesc: {
+    ar: 'مساحتكم الخاصة لإعادة اكتشاف روائع الأغاني المتنوعة والمختلفة بلمسة فريدة؛ صوتٌ بشريّ نقيّ ودافئ خالٍ تماماً من الموسيقى والآلات (Vocals Only)، مع استوديو الغناء الذكي وباقة متكاملة من الخدمات الصوتية. لستم هنا مجرد مستمعين، بل أنتم أهل الذوق الرفيع وشركاء هذا الشغف.',
+    en: 'Your dedicated sanctuary to rediscover timeless soundtracks with a pure human touch; warm, 100% acapella vocals completely free of instruments (Vocals Only), paired with a smart live vocal studio and certified vocal arts.'
+  },
+  heroWaveformText: {
+    ar: 'أكابيلا نقية 100% • استوديو مباشر',
+    en: '100% Pure Acapella • Live Studio'
+  },
+
+  // Hero Banner Feature Cards
+  featureContestBadge: { ar: 'منافسة نشطة', en: 'Active Contest' },
+  featureContestTitle: { ar: 'المسابقة الكبرى للأصوات', en: 'Grand Vocal Contest' },
+  featureContestDesc: { ar: 'تتويج أفضل صوت، تصويت الجمهور، وإصدار الشهادات والبطاقات الرسمية!', en: 'Crowning the best vocals, audience voting, and official certificates!' },
+  featureContestBtn: { ar: 'لوحة المتسابقين', en: 'Contest Board' },
+
+  featureQuizBadge: { ar: '3 مراحل معتمدة', en: '3 Certified Tiers' },
+  featureQuizTitle: { ar: 'كويز احزر الشارة', en: 'Spacetoon Theme Quiz' },
+  featureQuizDesc: { ar: 'اختبر ذاكرتك الطفولية في 28 شارة كلاسيكية واحصل على شهادة اجتياز موثقة وفورية!', en: 'Test your childhood nostalgia with 28 classic tracks and claim an accredited certificate!' },
+  featureQuizBtn: { ar: 'بدء التحدي الآن', en: 'Start Quiz Challenge' },
+
+  featurePassportBadge: { ar: 'جواز سبيستون', en: 'Spacetoon Passport' },
+  featurePassportTitle: { ar: 'جواز السفر الكرتوني', en: 'Spacetoon Passport Hub' },
+  featurePassportDesc: { ar: 'بطاقة الهوية الرسمية لأبطال كواكب سبيستون وتوثيق الإنجازات والألقاب!', en: 'Official identity passport for Spacetoon planet heroes with unlocked badges and ranks!' },
+  featurePassportBtn: { ar: 'عرض جوازي الكرتوني', en: 'View My Passport' },
+
+  featureTvBadge: { ar: 'بث مباشر 24/7', en: 'Live Stream 24/7' },
+  featureTvTitle: { ar: 'تلفزيون سبيستون الكلاسيكي', en: 'Retro Spacetoon TV' },
+  featureTvDesc: { ar: 'استمتع بمشاهدة أروع الشارات والفيديوهات الكلاسيكية في تلفزيون زمان التفاعلي!', en: 'Watch timeless classic opening themes and nostalgic videos on retro CRT TV!' },
+  featureTvBtn: { ar: 'تشغيل التلفزيون الكلاسيكي', en: 'Watch Retro TV' },
+
+  featureStoreBadge: { ar: 'إصدار فاخر', en: 'Deluxe Edition' },
+  featureStoreTitle: { ar: 'كتاب كلمات شارات سبيستون', en: 'Official Lyrics Anthology Book' },
+  featureStoreDesc: { ar: 'الكتاب المطبوع الرسمي الشامل لكلمات وتاريخ وأسرار أعظم شارات الطفولة من YONA SONGS.', en: 'The comprehensive official printed book of timeless childhood lyrics and archival history.' },
+  featureStoreBtn: { ar: 'معاينة وطلب الكتاب', en: 'Preview & Order Book' },
+
+  // Hero Banner CTAs & Dedications
+  featureDedicationsBanner: { ar: 'منصة الإهداءات وطلبات الشارات الحية', en: 'Live Fan Requests & Dedications' },
+  featureDedicationsBtn: { ar: 'إرسال إهداء الآن', en: 'Send Dedication' },
+  ctaListenerBadge: { ar: 'لأصحاب الذوق الرفيع', en: 'For Music Connoisseurs' },
+  ctaListenerTitle: { ar: 'استمع وروّق مع شاراتك المفضلة', en: 'Listen & Relax to Your Favorite Themes' },
+  ctaListenerDesc: { ar: 'تصفح واستمع إلى أضخم مكتبة عربية تسجيلات أكابيلا بدون موسيقى بجودة صوتية عالية ودافئة.', en: 'Browse and listen to the largest 100% vocal-only acapella soundtrack library in pure high quality.' },
+  ctaListenerStats: { ar: 'تسجيلات نقية 100%', en: '100% Pure Acapella' },
+  ctaListenerGenre: { ar: 'سبيستون وأحدث الأنمي', en: 'Spacetoon & Classic Anime' },
+  ctaListenerBtn: { ar: 'تصفح المكتبة الآن', en: 'Browse Song Archive' },
+  ctaSingerBadge: { ar: 'استوديو المواهب الحية', en: 'Talent Recording Studio' },
+  ctaSingerTitle: { ar: 'غنّ وسجّل شارتك المفضلة بصوتك', en: 'Sing & Record Your Favorite Theme Track' },
+  ctaSingerDesc: { ar: 'استخدم المايكروفون مع الكلمات المضاءة ومؤثرات الصدى المباشرة واطلب كود التقييم وتنافس في المسابقة.', en: 'Use live synchronized lyrics, studio reverb, get instant pitch scoring, and join the contest.' },
+  ctaSingerFeat1: { ar: 'كلمات مضاءة', en: 'Synced Lyrics' },
+  ctaSingerFeat2: { ar: 'صدى الاستوديو', en: 'Studio Reverb' },
+  ctaSingerFeat3: { ar: 'تقييم كويز النبرة', en: 'Pitch Scoring' },
+  ctaSingerBtn: { ar: 'دخول استوديو الغناء', en: 'Enter Vocal Studio' },
+  browseByCategory: { ar: 'تصفح حسب التصنيف:', en: 'Browse by Category:' },
+
+  // Contest Board Filters & Jury
+  contestJuryAdminActive: { ar: 'وضع المشرف ولجنة التحكيم مفعل', en: 'Admin & Jury Panel Active' },
+  contestJuryPanelBtn: { ar: 'دخول لجنة التحكيم', en: 'Jury Login' },
+  contestFilterAll: { ar: 'كافة المشاركات', en: 'All Submissions' },
+  contestFilterTopVoted: { ar: 'الأعلى تصويتاً', en: 'Most Voted' },
+  contestFilterTopScore: { ar: 'الأعلى تقييماً', en: 'Highest Score' },
+  contestFilterMyRecordings: { ar: 'تسجيلاتي المرفوعة', en: 'My Submissions' },
+  contestPodiumTitle: { ar: 'منصة المتصدرين وتتويج أبطال الأسبوع', en: 'Hall of Fame & Weekly Champions Podium' },
+  singNow: { ar: 'سجّل بصوتك ونافس الآن', en: 'Sing & Compete Now' },
+
+  // Stats Counters
+  statsTracks: { ar: 'تسجيل بدون موسيقى', en: 'Acapella Tracks' },
+  statsArtists: { ar: 'فنان ومؤدي صوتي', en: 'Featured Vocalists' },
+  statsAnime: { ar: 'عمل كلاسيكي وسبيستوني', en: 'Classic Anime Series' },
+  statsSingers: { ar: 'موهبة ومشارك مسجل', en: 'Talented Contestants' },
+
+  // Feature Quick Links
+  serviceDirectory: { ar: 'دليل الأغاني', en: 'Song Archive' },
+  serviceStudio: { ar: 'استوديو الغناء', en: 'Vocal Studio' },
+  servicePassport: { ar: 'جواز سبيستون', en: 'Hero Passport' },
+  serviceTv: { ar: 'تلفزيون سبيستون', en: 'Retro TV' },
+  serviceContest: { ar: 'المسابقة الكبرى', en: 'Grand Contest' },
+  serviceQuiz: { ar: 'كويز الشارات', en: 'Theme Quiz' },
+  serviceDedications: { ar: 'الإهداءات', en: 'Fan Requests' },
+  serviceStore: { ar: 'شراء المنتجات', en: 'Merch Store' },
+  serviceTools: { ar: 'أدوات الصوت', en: 'Audio Tools' },
+  serviceTelegram: { ar: 'سينما تليجرام', en: 'Telegram Cinema' },
+
+  // Dedications Bar
+  dedicationsBarTitle: { ar: 'منصة الإهداءات وطلبات الشارات الحية', en: 'Live Fan Requests & Dedications Hub' },
+  dedicationsBarDesc: { ar: 'أهدِ أغنيتك المفضلة بدون موسيقى لأصدقائك وشارك مشاعرك النوستالجية مع العائلة', en: 'Dedicate acapella soundtracks to your loved ones and share pure nostalgia' },
+  dedicationsBarBtn: { ar: 'إرسال إهداء الآن', en: 'Send Dedication' },
+
+  // Filters Panel
+  filtersTitle: { ar: 'تصفية وبحث تسجيلات الصوتيات', en: 'Filter & Search Soundtracks' },
+  filtersResults: { ar: 'تسجيل متاح', en: 'recordings found' },
+  filterAllCategories: { ar: 'كافة التصنيفات', en: 'All Categories' },
+  filterAllYears: { ar: 'كافة الحقب والسنوات', en: 'All Eras' },
+  filterSortLatest: { ar: 'الأحدث إصداراً', en: 'Latest Added' },
+  filterSortPopular: { ar: 'الأكثر استماعاً', en: 'Most Popular' },
+  filterSortTitle: { ar: 'الترتيب الأبجدي', en: 'Alphabetical' },
+  filterReset: { ar: 'إعادة ضبط', en: 'Reset Filters' },
+
+  // Recently Played & Grid
+  recentlyPlayedTitle: { ar: 'استمعت إليها مؤخراً', en: 'Recently Played' },
+  recentlyPlayedBadge: { ar: 'المحفوظات الأخيرة', en: 'Recent History' },
+  recordingsTitle: { ar: 'مكتبة التسجيلات والأغاني الحصرية', en: 'Exclusive Soundtracks Library' },
+  noRecordingsFound: { ar: 'لم يتم العثور على تسجيلات مطابقة لبحثك', en: 'No matching recordings found' },
+  noFavoritesFound: { ar: 'لم تقم بإضافة أي أغاني إلى المفضلة بعد', en: 'No favorites added yet' },
+  browseLibraryBtn: { ar: 'تصفح المكتبة وإضافة أغانٍ', en: 'Browse Library' },
+
+  // Card Badges & Tooltips
+  cardVocalsOnly: { ar: 'بدون موسيقى', en: 'Vocals Only' },
+  cardAddToFav: { ar: 'إضافة للمفضلة', en: 'Add to Favorites' },
+  cardRemoveFav: { ar: 'إزالة من المفضلة', en: 'Remove from Favorites' },
+
+  // SPACETOON TV HUB
+  tvHeroTitle: { ar: 'تلفزيون سبيستون وسينما الزمن الجميل', en: 'Spacetoon Retro CRT TV & Time Machine' },
+  tvHeroSubtitle: { ar: 'عش أجواء كوكب المغامرات وزمردة وأكشن مع بث مباشر وفيديوهات حصرية', en: 'Relive Adventure, Action, and Zomoroda planet broadcasts with retro CRT filters' },
+  tvPlanetsFilter: { ar: 'كواكب سبيستون:', en: 'Spacetoon Planets:' },
+  tvLiveBroadcast: { ar: 'بث مباشر الآن', en: 'Broadcasting Live' },
+  tvChangeChannel: { ar: 'تغيير القناة', en: 'Change Channel' },
+  tvTimeMachineYear: { ar: 'آلة الزمن - اختر الحقبة:', en: 'Time Machine - Select Era:' },
+  tvEpisodesArchive: { ar: 'أرشيف الحلقات والشارات', en: 'Episodes & Themes Archive' },
+  tvPowerOn: { ar: 'تشغيل التلفزيون', en: 'Power ON' },
+  tvPowerOff: { ar: 'إطفاء التلفزيون', en: 'Power OFF' },
+  tvModeVideo: { ar: 'التلفزيون بالصوت والصورة', en: 'TV Video Broadcast' },
+  tvModeAnnouncer: { ar: 'ميكروفون المعلق', en: 'Announcer Mic Studio' },
+  tvModeAudio: { ar: 'صوت الكواكب المسجل', en: 'Acapella Radio' },
+  tvModeTapes: { ar: 'أشرطة النوستالجيا', en: 'Vintage Tapes' },
+  tvRemoteTitle: { ar: 'جهاز التحكم عن بعد', en: 'CRT Remote Control' },
+  tvSanoudChime: { ar: 'سنعود بعد قليل', en: 'Be Right Back' },
+  tvOudnaChime: { ar: 'عُـدنـا!', en: 'We Are Back!' },
+  tvScheduleTitle: { ar: 'جدول برامج القناة اليوم:', en: 'Today\'s Broadcast Schedule:' },
+  tvFunFactTitle: { ar: 'أسرار وذكريات الكوكب:', en: 'Planet Lore & Trivia:' },
+
+  // AI ASSISTANT & CREATIVE STUDIO
+  aiHeroTitle: { ar: 'المساعد الذكي واستوديو التوليد الصوتي', en: 'Gemini AI Assistant & Multimodal Vocal Studio' },
+  aiHeroSubtitle: { ar: 'تحدث صوتياً مع رفيق سبيستون، ولد موسيقى جديدة، صمم فيديوهات بالذكاء الاصطناعي', en: 'Voice conversations, Lyria music generation, Veo video animation, and lyrics transcription' },
+  aiTabChat: { ar: 'المحادثة الذكية', en: 'AI Chat' },
+  aiTabMusic: { ar: 'توليد الموسيقى (Lyria)', en: 'Music Generator (Lyria)' },
+  aiTabVideo: { ar: 'صناعة الفيديو (Veo)', en: 'Video Animator (Veo)' },
+  aiTabTranscribe: { ar: 'التعرف الصوتي على الكلمات', en: 'Audio Transcription' },
+  aiTabSearch: { ar: 'البحث الموثق (Google Search)', en: 'Live Search Grounding' },
+  aiVoiceLiveBtn: { ar: 'بدء المحادثة الصوتية المباشرة (Live API)', en: 'Start Live Voice Conversation' },
+  aiGenerateMusicBtn: { ar: 'توليد مقطع موسيقي بالذكاء الاصطناعي', en: 'Generate Acapella Music' },
+  aiGenerateVideoBtn: { ar: 'توليد فيديو سبيستون بالذكاء الاصطناعي', en: 'Generate Veo Anime Video' },
+  aiTranscribeMicBtn: { ar: 'تسجيل المايك واستخراج الكلمات فوراً', en: 'Transcribe Mic Audio to Lyrics' },
+
+  // ANIME HUB
+  animeHeroTitle: { ar: 'أطلس مسلسلات الأنمي وسبيستون', en: 'Spacetoon & Anime Encyclopedia' },
+  animeHeroSubtitle: { ar: 'قصص، شخصيات، شارات، وذكريات كل عمل كلاسيكي عشنا معه', en: 'Stories, characters, soundtracks, and archival memories of classic anime' },
+  animeEpisodesCount: { ar: 'حلقة كاملة', en: 'episodes' },
+  animeListenTheme: { ar: 'استمع للشارة', en: 'Listen to Theme' },
+  animeSingKaraoke: { ar: 'غنّ في الاستوديو', en: 'Sing in Studio' },
+  animeFilterAll: { ar: 'الكل', en: 'All' },
+  animeFilterAnimeSeries: { ar: 'مسلسلات الأنمي', en: 'Anime Series' },
+  animeFilterAnimeMovies: { ar: 'أفلام الأنمي', en: 'Anime Movies' },
+  animeFilterWorldSeries: { ar: 'مسلسلات كلاسيكية', en: 'Classic Series' },
+  animeFilterWorldMovies: { ar: 'أفلام عالمية', en: 'World Movies' },
+  animeSearchPlaceholder: { ar: 'ابحث عن اسم الأنمي أو الأستوديو...', en: 'Search anime or studio...' },
+  animeStoryTab: { ar: 'القصة والأحداث', en: 'Story & Plot' },
+  animeEpisodesTab: { ar: 'الحلقات والسيرفرات', en: 'Episodes & Servers' },
+  animeCharactersTab: { ar: 'الشخصيات والأبطال', en: 'Characters & Heroes' },
+  animeThemesTab: { ar: 'الشارات والأغاني', en: 'Theme Songs' },
+  animeTelegramTab: { ar: 'روابط تيليجرام 4K', en: 'Telegram 4K Links' },
+
+  // TELEGRAM CINEMA HUB
+  telegramHeroTitle: { ar: 'سينما وقنوات تيليجرام سبيستون 4K', en: 'Telegram Cinema & 4K Streaming Hub' },
+  telegramHeroSubtitle: { ar: 'مشاهدة وتحميل أفلام ومسلسلات الأنمي بدون إعلانات وبأعلى دقة', en: 'Watch & download high-res 1080p/4K anime films and direct bot links' },
+  telegramJoinChannel: { ar: 'انضمام للقناة', en: 'Join Channel' },
+  telegramOpenBot: { ar: 'تشغيل البوت', en: 'Launch Bot' },
+  telegramSearchPlaceholder: { ar: 'ابحث عن قنوات وأفلام وسيرفرات تيليجرام...', en: 'Search Telegram channels, movies & bots...' },
+  telegramCatAll: { ar: 'كافة القنوات', en: 'All Channels' },
+  telegramCatAnime: { ar: 'قنوات الأنمي', en: 'Anime Channels' },
+  telegramCatMovies: { ar: 'أفلام سينما', en: 'Cinema Movies' },
+  telegramCatMusic: { ar: 'صوتيات وشارات', en: 'Music & Vocals' },
+  telegramCatBots: { ar: 'بوتات التحميل', en: 'Download Bots' },
+
+  // THEME QUIZ CHALLENGE
+  quizHeroTitle: { ar: 'تحدي كويز شارات سبيستون الكبرى', en: 'Grand Spacetoon Theme Quiz Challenge' },
+  quizHeroSubtitle: { ar: 'أجب عن الأسئلة بدقة، اجمع النقاط، واطبع شهادتك المعتمدة باسمك فوراً!', en: 'Answer correctly, climb the leaderboards, and print your certified diploma!' },
+  quizDuelArena: { ar: 'ساحة النزال المباشر (Quiz Duel)', en: 'Live PvP Quiz Duel Arena' },
+  quizQuestionNumber: { ar: 'السؤال', en: 'Question' },
+  quizOf: { ar: 'من', en: 'of' },
+  quizNextQuestion: { ar: 'السؤال التالي', en: 'Next Question' },
+  quizSubmitAnswers: { ar: 'إنهاء وتصحيح التحدي', en: 'Finish & Score Quiz' },
+
+  // VOCAL STUDIO & KARAOKE
+  studioHeroTitle: { ar: 'استوديو الغناء والكاريوكي الحي', en: 'Live Vocal Recording & Karaoke Studio' },
+  studioHeroSubtitle: { ar: 'سجل صوتك مع الكلمات المضاءة، تحكم بطبقات الصوت ومؤثر الصدى، وشارك أداءك', en: 'Record with synchronized glowing lyrics, adjust pitch, reverb, and claim your score' },
+  studioRecordBtn: { ar: 'بدء التسجيل بالمايكروفون', en: 'Start Mic Recording' },
+  studioStopBtn: { ar: 'إيقاف التسجيل وإنهاء الأداء', en: 'Stop & Finish Recording' },
+  studioScoreTitle: { ar: 'التقييم الصوتي والطبقة:', en: 'Vocal Pitch & Harmony Score:' },
+  studioSubmitToContest: { ar: 'رفع مشاركتي للمسابقة الكبرى', en: 'Submit Take to Grand Contest' },
+
+  // AUDIO TOOLS & VOCAL ISOLATOR
+  toolsHeroTitle: { ar: 'مختبر هندسة الصوت وعزل الأكابيلا', en: 'Audio Engineering & Acapella Isolator Lab' },
+  toolsHeroSubtitle: { ar: 'عزل الصوت البشري عن الموسيقى بالذكاء الاصطناعي، بيانو المقامات، ومدوزن النبرة', en: 'AI stem separation, eastern maqam piano, pitch shifter, and vocal tuner' },
+  toolsUploadTrack: { ar: 'رفع ملف صوتي للمعالجة', en: 'Upload Audio Track' },
+  toolsSeparateVocals: { ar: 'عزل الصوت البشري (Acapella)', en: 'Extract Vocals (Acapella)' },
+  toolsPianoMaqamat: { ar: 'بيانو تدريب المقامات', en: 'Maqamat Training Piano' },
+  toolsTabIsolator: { ar: 'عزل الصوت (Demucs AI)', en: 'AI Vocal Isolator' },
+  toolsTabBpm: { ar: 'حاسبة الإيقاع (Tap BPM)', en: 'Tap BPM Counter' },
+  toolsTabKey: { ar: 'مكتشف السلم والمقام', en: 'Key & Scale Finder' },
+  toolsTabPitch: { ar: 'مغير طبقة الصوت (Pitch)', en: 'Pitch Shifter' },
+  toolsTabCutter: { ar: 'مقص الصوتيات والمقاطع', en: 'Audio Trimmer' },
+
+  // SPACETOON PASSPORT HUB
+  passportHeroTitle: { ar: 'جواز سفر أبطال سبيستون الرسمي', en: 'Official Spacetoon Hero Passport' },
+  passportHeroSubtitle: { ar: 'هويتك الرقمية، تأشيرات الكواكب، أوسمة الشارات، ورتبتك الفنية', en: 'Your digital identity, planetary visa stamps, vocal medals, and hero rank' },
+  passportCreateId: { ar: 'إصدار وتخصيص جوازي', en: 'Issue & Customize Passport' },
+  passportPrintPdf: { ar: 'طباعة الجواز بصيغة PDF', en: 'Print Passport PDF' },
+  passportDownloadPng: { ar: 'تحميل كصورة PNG', en: 'Download PNG Badge' },
+  passportSelectHero: { ar: 'اختر بطلك المفضل:', en: 'Select Your Hero Character:' },
+  passportPlanetVisa: { ar: 'تأشيرة كوكب:', en: 'Planet Visa Stamp:' },
+  passportRankTitle: { ar: 'الرتبة الفنية السبيستونية:', en: 'Spacetoon Hero Rank:' },
+
+  // FAN DEDICATIONS HUB
+  dedicationsHeroTitle: { ar: 'حائط الإهداءات والرسائل الوجدانية', en: 'Fan Dedications & Sentimental Wall' },
+  dedicationsHeroSubtitle: { ar: 'اكتب إهداءك الخاص، اطلب شارة نادرة، واقرأ مشاعر جمهور سبيستون', en: 'Send loving dedications, request rare soundtracks, and connect with fellow fans' },
+  dedicationsSendNew: { ar: 'كتابة إهداء جديد', en: 'Send New Dedication' },
+  dedicationsFilterAll: { ar: 'كافة الرسائل', en: 'All Messages' },
+  dedicationsFilterRequests: { ar: 'طلبات الشارات', en: 'Song Requests' },
+  dedicationsFilterDedications: { ar: 'إهداءات الأصدقاء', en: 'Fan Dedications' },
+  dedicationsFilterPopular: { ar: 'الأكثر تصويتاً', en: 'Most Upvoted' },
+  dedicationsModalTitle: { ar: 'أرسل إهداءك أو اطلب شارة جديدة', en: 'Send Dedication or Request Song' },
+
+  // COMMUNITY & VOTING HUB
+  communityHeroTitle: { ar: 'منصة تصويت الجمهور واستطلاعات الرأي', en: 'Audience Voting & Fan Polls Arena' },
+  communityHeroSubtitle: { ar: 'صوّت للمتسابقين، اقترح أغانٍ جديدة للتسجيل، وشارك في استطلاعات الشهر', en: 'Vote for contestants, submit song ideas for acapella recordings, and shape the platform' },
+  communityVoteBtn: { ar: 'تصويت', en: 'Vote' },
+  communitySuggestSong: { ar: 'اقترح أغنية لتسجيلها', en: 'Suggest Track to Record' },
+
+  // ARTISTS HUB
+  artistsHeroTitle: { ar: 'أساطير ورواد الغناء والدبلجة', en: 'Legendary Vocalists & Dubbing Artists' },
+  artistsHeroSubtitle: { ar: 'تعرف على السير الذاتية، المقامات، والتسجيلات الخالدة لعمالقة الفن', en: 'Biographies, vocal profiles, and acapella discographies of iconic masters' },
+
+  // Certificates & Downloads
+  certDownloadingWait: { ar: 'جارٍ توليد الشهادة الرسمية...', en: 'Generating Official Certificate...' },
+  certDownloadedSuccess: { ar: 'تم التحميل بنجاح!', en: 'Downloaded Successfully!' },
+  certDownloadPdfBtn: { ar: 'تحميل كـ PDF فائق الدقة', en: 'Download High-Res PDF' },
+  certDownloadPngBtn: { ar: 'تحميل كـ صورة (PNG)', en: 'Download Image (PNG)' },
+  certPrintBtn: { ar: 'طباعة فورية', en: 'Print Certificate' },
+  certEditInfoBtn: { ar: 'تعديل البيانات والاسم', en: 'Edit Info & Recipient' },
+  certThemeRoyal: { ar: 'ثيم الذهب الملكي', en: 'Royal Midnight' },
+  certThemeParchment: { ar: 'ثيم الرق الأكاديمي الأبيض', en: 'Academic Ivory' },
+
+  // Footer & Common
+  storeHeaderTitle: { ar: 'متجر المنتجات والمطبوعات الرسمية', en: 'Official Store & Books' },
+  storeHeaderSubtitle: { ar: 'استكشف واطلب الكتب والمطبوعات الرسمية المعتمدة لمنصة YONA مباشرة من متجر Amazon بشحن دولي آمن وسريع.', en: 'Explore and order official YONA books and merchandise directly from Amazon with international delivery.' },
+  storeBuyOnAmazon: { ar: 'تصفح المتجر على Amazon', en: 'Shop Now on Amazon' },
+  storeReturnToDir: { ar: 'العودة للقناة الرسمية', en: 'Return to Main Channel' },
+  storeAllProducts: { ar: 'جميع المنتجات', en: 'All Products' },
+  storeBooksOnly: { ar: 'الكتب والمطبوعات الرسمية', en: 'Official Books' },
+  storeUpcomingBrand: { ar: 'منتجات البراند القادمة', en: 'Upcoming Merch' },
+  storeAmazonLiveBook: { ar: 'الكتاب المطبوع المتاح الآن على Amazon', en: 'Official Printed Book Live on Amazon' },
+  storeInStockReady: { ar: 'متوفر للطلب المباشر', en: 'In Stock & Ready' },
+  storeVipWaitlistTitle: { ar: 'احصل على أولوية الطلب وإشعار الإطلاق كعضو VIP', en: 'Get VIP Priority Alert & Discount' },
+  storeVipWaitlistSubtitle: { ar: 'سجل بريدك الإلكتروني لتصلك دعوة الإطلاق الفورية وحجز أول دفعة محدودة مع كود خصم 25%.', en: 'Enter your email for instant launch invites, 25% discount, and priority access.' },
+  storeEmailPlaceholder: { ar: 'أدخل بريدك الإلكتروني هنا...', en: 'Enter your email address...' },
+  storeSubscribeBtn: { ar: 'تأكيد التسجيل وتفعيل الخصم', en: 'Subscribe & Get VIP Pass' },
+  storeCopyCoupon: { ar: 'نسخ كود الخصم', en: 'Copy Voucher Code' },
+  storeCopied: { ar: 'تم نسخ كود الخصم!', en: 'Code Copied!' },
+
+  footerBrandDesc: {
+    ar: 'المنصة العربية الأولى المتخصصة في تقديم شارات سبيستون والأنمي والأغاني بتسجيلات صوتية بشرية حصرية بدون موسيقى (Vocals Only).',
+    en: 'The premier platform dedicated to authentic acapella and vocal-only soundtracks from Spacetoon and classic anime.'
+  },
+  footerQuickLinks: { ar: 'روابط المنصة السريعة', en: 'Platform Quick Links' },
+  footerNewsletterTitle: { ar: 'النشرة البريدية الحصرية', en: 'VIP Newsletter' },
+  footerNewsletterDesc: { ar: 'كن أول من يستمع للتسجيلات الجديدة وتحديثات المسابقات والشهادات.', en: 'Be the first to hear new vocal releases, contest results, and certificates.' },
+  footerSubscribeBtn: { ar: 'اشتراك', en: 'Subscribe' },
+  footerRights: { ar: 'جميع الحقوق محفوظة لمنصة YONA SONGS © 2026', en: 'All rights reserved © 2026 YONA SONGS' },
+
+  // Audio Tools & Vocal Separator
+  audioToolsTitle: { ar: 'مختبر ومعالجة الصوت الاحترافي', en: 'Pro Audio Lab & Processing' },
+  audioToolsSubtitle: { ar: 'عزل الصوت بالذكاء الاصطناعي، حساب الإيقاع، استكشاف النغمات والمقامات، وتعديل السرعة والطبقات', en: 'AI stem separation, tap BPM calculator, key detector, and pitch/speed editor' },
+  toolVocalSeparator: { ar: 'عزل الصوت والآلات', en: 'Stem Separator' },
+  toolBpmCalculator: { ar: 'حاسبة الـ BPM', en: 'Tap BPM' },
+  toolKeyDetector: { ar: 'كاشف النغمة والمقام', en: 'Key Detector' },
+  toolPitchSpeed: { ar: 'تغيير السرعة والطبقة', en: 'Pitch & Speed' },
+  toolAudioTrimmer: { ar: 'قص وتعديل الصوت', en: 'Audio Trimmer' },
+  aiSeparatorHeading: { ar: 'عزل الصوت وحذف الموسيقى (Vocals & Instrumental Stem Separator)', en: 'AI Vocal & Instrumental Stem Separator' },
+  aiSeparatorDesc: { ar: 'استخرج مسار الصوت البشري الأكابيلا أو احذف صوت المغني للحصول على كاريوكي نقي وبجودة 320kbps.', en: 'Extract pure acapella vocals or remove vocals to get crystal-clear karaoke tracks.' },
+  
+  // Theme Quiz Translations
+  quizTitle: { ar: 'كويز تحدي شارات سبيستون الكبرى', en: 'Grand Spacetoon Theme Song Quiz' },
+  quizSubtitle: { ar: 'اختبر ذاكرتك الذهبية واكتشف مستواك من بين 3 مراحل معتمدة واحصل على شهادة شرفية موثقة', en: 'Test your childhood memory across 3 certified tiers and claim an official certificate' },
+  quizTier1Name: { ar: 'المرحلة 1: شبل المستقبل (سهل)', en: 'Tier 1: Future Cub (Easy)' },
+  quizTier2Name: { ar: 'المرحلة 2: حارس الذكريات (متوسط)', en: 'Tier 2: Memory Guardian (Medium)' },
+  quizTier3Name: { ar: 'المرحلة 3: أسطورة سبيستون (تحدي النخبة)', en: 'Tier 3: Spacetoon Legend (Elite)' },
+  quizScore: { ar: 'النقاط', en: 'Score' },
+  quizStreak: { ar: 'التتالي', en: 'Streak' },
+  quizTimeLeft: { ar: 'الوقت المتبقي', en: 'Time Left' },
+  quizFinish: { ar: 'إنهاء الكويز', en: 'Finish Quiz' },
+  quizRestart: { ar: 'إعادة المحاولة', en: 'Restart Quiz' },
+  quizViewCertificate: { ar: 'عرض الشهادة المعتمدة', en: 'View Certified Diploma' },
+
+  // Artist Hub Translations
+  artistHubTitle: { ar: 'دليل مغنيي ومؤلفي شارات سبيستون والأنمي', en: 'Spacetoon & Anime Vocalists Archive' },
+  artistHubSubtitle: { ar: 'سير وأعمال أصحاب الأصوات والألحان الذهبية التي شكلت ذكريات طفولتنا', en: 'Biographies and works of the legendary voices and composers who shaped our childhood' },
+  artistRecordingsCount: { ar: 'أعمال مسجلة بدون موسيقى', en: 'Recorded Acapella Tracks' },
+  artistPlayTrack: { ar: 'استماع للعمل', en: 'Play Soundtrack' },
+  
+  // Player & Modal Translations
+  lyricsTab: { ar: 'كلمات الشارة', en: 'Lyrics' },
+  relatedSongsTab: { ar: 'شارات مشابهة', en: 'Similar Soundtracks' },
+  copyLyricsBtn: { ar: 'نسخ الكلمات', en: 'Copy Lyrics' },
+  lyricsCopiedMsg: { ar: 'تم نسخ الكلمات!', en: 'Lyrics Copied!' },
+  downloadTrack: { ar: 'تحميل التسجيل', en: 'Download Track' },
+  closeModal: { ar: 'إغلاق', en: 'Close' },
+};
+
+// Comprehensive English Translation Dictionary for Song Titles & Anime
+export const songTitleTranslations: { [arTitle: string]: string } = {
+  'أنا وأخي': 'Me and My Brother (Brothers Bond)',
+  'شارة القناص': 'Hunter x Hunter Theme',
+  'أغنية كرتون القناص - رشا رزق - بدون موسيقى': 'Hunter x Hunter Acapella (Rasha Rizk)',
+  'عهد الأصدقاء': 'Romeo and the Black Brothers',
+  'أمي كم أهواها': 'Mother, How I Love You',
+  'ريمي الفتى الشارد': 'Remi, Nobody\'s Boy',
+  'دروب ريمي': 'Remi, Sans Famille (You Are My Safety)',
+  'ما من أغصان تبقى عارية - أغنية البؤساء بدون موسيقى': 'Les Misérables (Cosette Theme - Vocals Only)',
+  'أغنية البؤساء': 'Les Misérables Theme',
+  'دراغون بول': 'Dragon Ball Z Theme',
+  'شارة دراجون بول زد (الحزء الأول)': 'Dragon Ball Z Part 1 Theme',
+  'سلام دانك': 'Slam Dunk Theme',
+  'أبطال الديجيتال': 'Digimon Adventure Theme',
+  'أجنحة الكاندام': 'Gundam Wing Theme',
+  'شارة أجنحة الكاندام': 'Gundam Wing Theme Song',
+  'سيمبا': 'Simba the King Lion',
+  'صقور الأرض': 'Warriors of the Earth (Three Kingdoms)',
+  'هزيم الرعد': 'Thunder Jet (Ginga Sengoku Yuu Gaiden)',
+  'المحقق كونان': 'Detective Conan Theme',
+  'فرسان الأرض': 'Knights of the Earth',
+  'ماوكلي فتى الأدغال': 'Mowgli, Jungle Boy',
+  'بابار فيل': 'Babar the Elephant',
+  'سابق ولاحق': 'Bakusou Kyoudai Let\'s & Go!!',
+  'بي بليد': 'Beyblade Theme',
+  'داي الشجاع': 'Dragon Quest: The Adventure of Dai',
+  'سالي': 'Princess Sarah (A Little Princess)',
+  'صاحب الظل الطويل': 'Daddy-Long-Legs (Watashi no Ashinaga Ojisan)',
+  'لحن الحياة': 'Trapp Family Story (Sound of Music)',
+  'سندريلا': 'Cinderella Monogatari',
+  'أنا وأختي': 'Daa! Daa! Daa! (UFO Baby / Baby and Me)',
+  'حكايات ما أحلاها': 'Grimm\'s Fairy Tale Classics',
+  'طريق السلام': 'Road to Peace',
+  'إيميلي فتاة الرياح': 'Emily of New Moon',
+  'أيروكا': 'Idol Tenshi Youkoso Yoko (I Dreamed a House)',
+  'أيروكا - رسمت بيتاً': 'Irouka - I Dreamed a Home',
+  'أنا والماسي (سبيس باور)': 'Diamond Dust (Space Power)',
+  'حلمي تحطم واختفى': 'My Dream Was Shattered & Vanished (Amy Hetari)',
+  'أغنية اليويو بليزن تينز بدون موسيقى (إيقاع)': 'Blazing Teens Yo-Yo Theme (Vocals Only)',
+  'شارة أنمي قطرة الندى | أبحث عن قلب يغمرني بحنان (بدون موسيقى)': 'Drop of Dew (Looking for a Loving Heart - Vocals Only)',
+  'أغنية حياتي قصص وحكايات كاملة _ بدون موسيقى حصريا': 'My Life Stories & Tales (Exclusive Vocals Only)',
+  'أروع أغاني وشارات سبيستون بدون موسيقى - التجميعة الكاملة': 'Ultimate Spacetoon Acapella Anthology (Full Suite)',
+  'لو كنت نغمض عينيا بدون موسيقى (حلم) / Emel Mathlouthi': 'If I Close My Eyes (Dream - Emel Mathlouthi Vocals)',
+  'صوت بارك شين هاي بدون موسيقى (أوتار القلوب)': 'Park Shin-hye - Heartstrings (Vocals Only)',
+  'يا غايب': 'Ya Ghayeb (Fadel Shaker)',
+  'لو على قلبي': 'Law Ala Albi (Fadel Shaker)',
+  'كان عنا طاحون': 'Kan Ena Tahoun (Fairouz)',
+  'سهر الليالي': 'Sahar El Layali (Fairouz)',
+  'بتونس بيك': 'Batwanes Beek (Warda)',
+  'أصابك عشق': 'Asabaka Eshq (Classical Ode)',
+  'لا تبكِ يا صغيري': 'Do Not Cry, My Little One (Digimon)',
+  'شارة كوكب أكشن الأصلية': 'Official Action Planet Theme',
+  'شارة كوكب زمردة الأصلية': 'Official Zomoroda Planet Theme',
+  'شارة كوكب مغامرات الأصلية': 'Official Adventure Planet Theme',
+  'شارة كوكب رياضة الأصلية': 'Official Sports Planet Theme',
+  'شارة كوكب كوميديا الأصلية': 'Official Comedy Planet Theme',
+  'شارة كوكب تاريخ الأصلية': 'Official History Planet Theme',
+  'شارة كوكب علوم الأصلية': 'Official Science Planet Theme',
+  'شارة كوكب بون بون الأصلية': 'Official Bon Bon Planet Theme',
+  'شارة كوكب أفلام الأصلية': 'Official Movies Planet Theme',
+  'شارة كوكب أبجد الأصلية': 'Official Abjad Planet Theme'
+};
+
+export const animeTitleTranslations: { [arAnime: string]: string } = {
+  'سبيستون': 'Spacetoon',
+  'سبيستون كلاسيك': 'Spacetoon Classic',
+  'شارات سبيستون الخالدة': 'Spacetoon Soundtracks',
+  'المحقق كونان': 'Detective Conan',
+  'عهد الأصدقاء': 'Romeo and the Black Brothers',
+  'القناص': 'Hunter x Hunter',
+  'دراغون بول': 'Dragon Ball Z',
+  'دراجون بول زد': 'Dragon Ball Z',
+  'سلام دانك': 'Slam Dunk',
+  'أبطال الديجيتال': 'Digimon Adventure',
+  'أجنحة الكاندام': 'Gundam Wing',
+  'ريمي': 'Remi',
+  'دروب ريمي': 'Remi Sans Famille',
+  'أنا وأخي': 'Me and My Brother',
+  'هزيم الرعد': 'Thunder Jet',
+  'صقور الأرض': 'Warriors of the Earth',
+  'سيمبا': 'Simba Lion King',
+  'فرسان الأرض': 'Earth Knights',
+  'ماوكلي': 'Jungle Book Mowgli',
+  'سابق ولاحق': 'Let\'s & Go',
+  'بي بليد': 'Beyblade',
+  'داي الشجاع': 'Dai no Daibouken',
+  'سالي': 'Princess Sarah',
+  'صاحب الظل الطويل': 'Daddy Long Legs',
+  'لحن الحياة': 'Sound of Music',
+  'سندريلا': 'Cinderella',
+  'أنا وأختي': 'Baby and Me',
+  'حكايات ما أحلاها': 'Grimm Tales',
+  'إيميلي': 'Emily of New Moon',
+  'البؤساء': 'Les Misérables',
+  'أيروكا': 'Irouka',
+  'بليزن تينز': 'Blazing Teens',
+  'طرب كلاسيكي': 'Classical Tarab',
+  'فضل شاكر': 'Fadel Shaker Classics',
+  'فيروز': 'Fairouz Classics',
+  'طرقان / سبيستون': 'Tarqan / Spacetoon',
+  'رشا رزق': 'Rasha Rizk',
+  'عاصم سكر': 'Assem Sukkar',
+  'طارق العربي طرقان': 'Tariq Al-Arabi Tarqan',
+  'إيمي هيتاري': 'Amy Hetari'
+};

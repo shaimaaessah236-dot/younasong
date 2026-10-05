@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "contestEntries": {
+      "title": "Contest Entries",
+      "description": "Weekly vocal contest entries, scores and recordings",
+      "type": "object",
+      "properties": {
+        "singerName": { "type": "string" },
+        "songTitle": { "type": "string" },
+        "score": { "type": "number" },
+        "pitchTier": { "type": "string" },
+        "countryOrCity": { "type": "string" },
+        "audioUrl": { "type": "string" },
+        "votes": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["singerName", "songTitle", "score"]
+    },
+    "users": {
+      "title": "User Profiles",
+      "description": "User profiles, Spacetoon passport data and achievements",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "passportNumber": { "type": "string" },
+        "stamps": { "type": "array" },
+        "heroTier": { "type": "string" }
+      }
+    },
+    "dedications": {
+      "title": "Fan Dedications",
+      "description": "Song requests and fan dedications",
+      "type": "object",
+      "properties": {
+        "fromUser": { "type": "string" },
+        "toUser": { "type": "string" },
+        "songTitle": { "type": "string" },
+        "message": { "type": "string" },
+        "likes": { "type": "number" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  }
+}

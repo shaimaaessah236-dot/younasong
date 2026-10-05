@@ -1,0 +1,34 @@
+# ===================================================
+# YONA SONGS - Official Robots.txt for Search Engines
+# ===================================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Googlebot & Googlebot-Image
+User-agent: Googlebot
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Bingbot & MSNBot
+User-agent: Bingbot
+User-agent: msnbot
+Allow: /
+
+# Applebot & Yandex
+User-agent: Applebot
+User-agent: YandexBot
+Allow: /
+
+# Sitemaps Index
+Sitemap: https://yonasongs.com/sitemap.xml
+Host: yonasongs.com
